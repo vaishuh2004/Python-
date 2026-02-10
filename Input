@@ -1,0 +1,6 @@
+s=input()
+print(s)
+n=int(input())
+print(n+10)
+f=float(input())
+print(f*10)
