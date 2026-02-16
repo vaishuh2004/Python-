@@ -1,0 +1,8 @@
+mini,max=list[0],list[0]
+for i in list:
+    if i<mini:
+        mini=i
+    if i>max:
+        max=i
+print(mini)
+print(max)
