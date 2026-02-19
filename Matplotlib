@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+x=[1,2,3]
+y=[2,4,6]
+plt.plot(x,y)
+plt.show
+df=pd.DataFrame({"salary":[18000,25000,45000,89000,36000,56000,56000,15000]})
+df
+days=[1,2,3,4,5,6,7,8]
+sales=[200,560,100,89,544,100,250,250]
+plt.plot(days,sales)
+plt.hist(df["salary"],color="purple",bins=3)
+plt.boxplot(df["salary"])
+inc=[100,1500,1200,5000,4000,5300,1700]
+loan=[1200,800,1200,4500,3300,1600,1400]
+plt.scatter(inc,loan)
+expenses=[20,20,15,30,15]
+things=['shopping','food','makeup','gym','movies']
+plt.pie(expenses,labels=things)
+plt.show()
