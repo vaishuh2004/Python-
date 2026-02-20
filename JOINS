@@ -1,0 +1,16 @@
+df1=pd.DataFrame({'sid':[401,402,403,405],'name':['daru','vaish','shital','kiran'],
+                  'city':['chennai','bengaluru','pune','mumbai']})
+df1
+df2=pd.DataFrame({'sid':[401,402,403,406],'marks':[65,78,92,88]})
+df2
+final_df=pd.merge(df1,df2,how='inner')
+final_df
+final_df=pd.merge(df1,df2,how='right')
+final_df
+final_df=pd.merge(df1,df2,how='outer')
+final_df
+df3=pd.DataFrame({'sid':[510,512,513],'name':['daru','shital','kiran'],
+                  'city':['bengaluru','pune','mumbai']})
+df3
+df_combine=pd.concat([df1,df2],ignore_index=True)
+df_combine
