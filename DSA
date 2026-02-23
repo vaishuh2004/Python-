@@ -1,0 +1,28 @@
+from collections import Counter
+
+ctr = Counter([1, 2, 2, 3, 3, 3])
+common = ctr.most_common(1)
+
+print(common)
+from collections import Counter
+
+ctr1 = Counter([1, 2, 2, 3])
+ctr2 = Counter([2, 3, 3, 4])
+
+# Addition
+print(ctr1 + ctr2)  
+# Subtraction
+print(ctr1 - ctr2)  
+import heapq
+
+# Creating a heap
+h = [10, 20, 15, 30, 40]
+min = heapq.heappop(h)
+print("smalest:",min)
+print(h)
+import heapq
+li=[3,5,1,7,9,2]
+heapq.heapify(li)
+both=heapq.heappushpop(li,4)
+print(both)
+print(li)
